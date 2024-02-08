@@ -21,6 +21,7 @@ import SingleNews from './components/News/SingleNews';
 import Service from './components/Service';
 import Shops from './components/Shops';
 import ShopDetails from './components/Shops/Details';
+import Robot1 from './components/Robot1';
 
 function Routes() {
     const [loading, setLoading] = useState(true);
@@ -44,7 +45,7 @@ function Routes() {
                     <ScrollToTop>
                         <Switch>
                             {/* <Route exact path="/" component={HomeOne} /> */}
-                            <Route exact path="/" component={HomeEight} />
+                            <Route exact path="/" component={HomeSeven} />
                             <Route exact path="/home-two" component={Hometwo} />
                             <Route exact path="/home-three" component={HomeThree} />
                             <Route exact path="/home-four" component={HomeFour} />
@@ -63,6 +64,7 @@ function Routes() {
                             <Route exact path="/about-us-another" component={AboutUsTwo} />
                             <Route exact path="/shops" component={Shops} />
                             <Route exact path="/shops/shop-details" component={ShopDetails} />
+                            <Route exact path='/robot1' component={Robot1}/>
                             <Route component={Error} />
                         </Switch>
                     </ScrollToTop>
