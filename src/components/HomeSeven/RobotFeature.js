@@ -4,9 +4,12 @@ import thumb from '../../assets/images/features-thumb-1.png';
 import shapeSix from '../../assets/images/shape/shape-6.png';
 import shapeSeven from '../../assets/images/shape/shape-7.png';
 import shapeEight from '../../assets/images/shape/shape-8.png';
+import robot1 from '../../assets/images/Homepage Images/robot1.png';
+import robot2 from '../../assets/images/Homepage Images/robot2.png';
+import robot3 from '../../assets/images/Homepage Images/robot3.png';
+import robot4 from '../../assets/images/Homepage Images/robot4.png';
 
-
-function FeaturesHomeOne({ className }) {
+function RobotFeature({ className }) {
     const [tab, setTab] = useState('setting');
     const handleClick = (e, value) => {
         e.preventDefault();
@@ -34,7 +37,7 @@ function FeaturesHomeOne({ className }) {
                                     aria-controls="v-pills-home"
                                     aria-selected="true"
                                 >
-                                    <i className="fas fa-cog" /> Settings
+                                    <i className="fas fa-robot" /> PuduBot
                                 </a>
                                 <a
                                     onClick={(e) => handleClick(e, 'report')}
@@ -46,7 +49,7 @@ function FeaturesHomeOne({ className }) {
                                     aria-controls="v-pills-profile"
                                     aria-selected="false"
                                 >
-                                    <i className="fas fa-exclamation-triangle" /> Report
+                                    <i className="fas fa-robot" /> BellaBot
                                 </a>
                                 <a
                                     onClick={(e) => handleClick(e, 'notice')}
@@ -58,7 +61,7 @@ function FeaturesHomeOne({ className }) {
                                     aria-controls="v-pills-messages"
                                     aria-selected="false"
                                 >
-                                    <i className="fas fa-bell" /> Saeety Notices
+                                    <i className="fas fa-robot" /> HolaBot
                                 </a>
                                 <a
                                     onClick={(e) => handleClick(e, 'app')}
@@ -70,7 +73,7 @@ function FeaturesHomeOne({ className }) {
                                     aria-controls="v-pills-settings"
                                     aria-selected="false"
                                 >
-                                    <i className="fas fa-lock" /> App Lock
+                                    <i className="fas fa-robot" /> KettyBot
                                 </a>
                             </div>
                         </div>
@@ -92,7 +95,7 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src={thumb} alt="" />
+                                            <img src={robot1} className='' alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
@@ -101,13 +104,12 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="600ms"
                                         >
-                                            <span>Custom Reacyions</span>
+
                                             <h3 className="title">
-                                                Let the <br /> Conversation flow
+                                                PuduBot
                                             </h3>
                                             <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
+                                            Practical and convenient standard serving robot with the largest load capacity.
                                             </p>
                                             <Link className="main-btn" to="/about-us">
                                                 Learn More
@@ -129,7 +131,7 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src={thumb} alt="" />
+                                            <img src={robot2} alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
@@ -138,13 +140,11 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="600ms"
                                         >
-                                            <span>Custom Reacyions</span>
                                             <h3 className="title">
-                                                Let the <br /> Conversation flow
+                                                BellaBot
                                             </h3>
                                             <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
+                                            Premium serving robot capable of exchanging emotions through voice, facial expressions, etc.
                                             </p>
                                             <a className="main-btn" href="#">
                                                 Learn More
@@ -166,7 +166,7 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src={thumb} alt="" />
+                                            <img src={robot3} alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
@@ -175,13 +175,11 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="600ms"
                                         >
-                                            <span>Custom Reacyions</span>
                                             <h3 className="title">
-                                                Let the <br /> Conversation flow
+                                                HolaBot
                                             </h3>
                                             <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
+                                            A high-efficiency, high-capacity unloading robot that supports a call function and increases table turnover.
                                             </p>
                                             <a className="main-btn" href="#">
                                                 Learn More
@@ -203,7 +201,7 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="200ms"
                                         >
-                                            <img src={thumb} alt="" />
+                                            <img src={robot4} alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
@@ -212,13 +210,11 @@ function FeaturesHomeOne({ className }) {
                                             data-wow-duration="2000ms"
                                             data-wow-delay="600ms"
                                         >
-                                            <span>Custom Reacyions</span>
                                             <h3 className="title">
-                                                Let the <br /> Conversation flow
+                                                KettyBot
                                             </h3>
                                             <p>
-                                                Car boot absolutely bladdered posh burke the
-                                                wireless mush some dodg.
+                                            A smart guidance robot with a large display on the front that is minimal in size and has no problems even in narrow passages.
                                             </p>
                                             <a className="main-btn" href="#">
                                                 Learn More
@@ -244,4 +240,4 @@ function FeaturesHomeOne({ className }) {
     );
 }
 
-export default FeaturesHomeOne;
+export default RobotFeature;

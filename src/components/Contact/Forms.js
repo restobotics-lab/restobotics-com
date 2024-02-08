@@ -1,9 +1,27 @@
-import React from 'react';
-
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 function Forms() {
+    const form = useRef();
+    const [formSubmitted, setFormSubmitted] = useState(false);
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('restobotics', 'template_lcu3k8o', form.current, 'lEDOmEs9IeFPi1YwW')
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    setFormSubmitted(true);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
         <>
-            <section className="contact-section">
+            <section className="contact-section mt-50">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4">
@@ -54,53 +72,64 @@ function Forms() {
                             </div>
                         </div>
                         <div className="col-md-8">
-                            <div className="contact-form">
-                                <h4>Let’s Connect</h4>
-                                <p>Integer at lorem eget diam facilisis lacinia ac id massa.</p>
-                                <form action="#" method="post" className="row">
-                                    <div className="col-md-6">
-                                        <input type="text" name="f-name" placeholder="First Name" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input type="text" name="l-name" placeholder="Last Name" />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email Address"
-                                        />
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input
-                                            type="number"
-                                            name="phone"
-                                            placeholder="Phone Number"
-                                        />
-                                    </div>
-                                    <div className="col-md-12">
-                                        <input type="text" name="suject" placeholder="Subject" />
-                                    </div>
-                                    <div className="col-md-12">
-                                        <textarea
-                                            name="message"
-                                            placeholder="How can we help?"
-                                        ></textarea>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="condition-check">
-                                            <input id="terms-conditions" type="checkbox" />
-                                            <label htmlFor="terms-conditions">
-                                                I agree to the <a href="#">Terms & Conditions</a>
-                                            </label>
+                            {!formSubmitted ? (
+                                <div className="contact-form">
+                                    <h4>Let’s Connect</h4>
+                                    <p>For business related information or support please contact us</p>
+                                    <form ref={form} onSubmit={sendEmail} className="row">
+                                        <div className="col-md-6">
+                                            <input type="text" name="first_name" placeholder="First Name" />
                                         </div>
+                                        <div className="col-md-6">
+                                            <input type="text" name="last_name" placeholder="Last Name" />
+                                        </div>
+                                        <div className="col-md-6">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email Address"
+                                            />
+                                        </div>
+                                        <div className="col-md-6">
+                                            <input
+                                                type="number"
+                                                name="phone_no"
+                                                placeholder="Phone Number"
+                                            />
+                                        </div>
+                                        <div className="col-md-12">
+                                            <input type="text" name="subject" placeholder="Subject" />
+                                        </div>
+                                        <div className="col-md-12">
+                                            <textarea
+                                                name="message"
+                                                placeholder="How can we help?"
+                                            ></textarea>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="condition-check">
+                                                <input id="terms-conditions" type="checkbox" />
+                                                <label htmlFor="terms-conditions">
+                                                    I agree to the <a href="#">Terms & Conditions</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6 text-right">
+                                            <input type="submit" name="submit" value="Send Message" />
+                                        </div>
+                                    </form>
+                                </div>
+                            ) : (
+                                <div className="contact-form">
+                                    <div className="confirmation-message">
+                                        <h3>Thank you for reaching out to us!</h3>
+                                        <p>We will get back to you as soon as possible.</p>
                                     </div>
-                                    <div className="col-md-6 text-right">
-                                        <input type="submit" name="submit" value="Send Message" />
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                            )}
+
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -108,8 +137,9 @@ function Forms() {
             <div className="bisylms-map">
                 <iframe
                     title="map"
-                    src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;coord=39.966528,-75.158284&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=p&amp;z=16&amp;iwloc=B&amp;output=embed"
-                ></iframe>
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kent%20state%20University+(RestoBotics)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+                </iframe>
             </div>
         </>
     );

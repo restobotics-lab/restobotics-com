@@ -1,17 +1,15 @@
 import React from 'react';
 import useToggle from '../../Hooks/useToggle';
-import BlogHomeOne from '../HomeOne/BlogHomeOne';
-import FaqHomeOne from '../HomeOne/FaqHomeOne';
-import FeaturesHomeOne from '../HomeOne/FeaturesHomeOne';
-import FooterHomeOne from '../HomeOne/FooterHomeOne';
-import ProjectHomeOne from '../HomeOne/ProjectHomeOne';
-import TeamHomeOne from '../HomeOne/TeamHomeOne';
-import CounterArea from '../HomeTwo/CounterArea';
-import DownloadHomeTwo from '../HomeTwo/DownloadHomeTwo';
-import PricingHomeTwo from '../HomeTwo/PricingHomeTwo';
 import Drawer from '../Mobile/Drawer';
 import HeaderHomeSeven from './HeaderHomeSeven';
-import HeroHomeSeven from './HeroHomeSeven';
+import ShowCaseHomeSeven from './ShowCaseHomeSeven';
+import SecondSection from './SecondSection';
+import RobotFeature from './RobotFeature';
+import Lineup from './Lineup';
+import Sponser from './Sponser';
+import TeamMember from './TeamMember';
+import Footer from './Footer';
+import SliderShow from './SliderShow';
 
 function HomeSeven() {
     const [drawer, drawerAction] = useToggle(false);
@@ -19,16 +17,21 @@ function HomeSeven() {
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             <HeaderHomeSeven action={drawerAction.toggle} />
-            <HeroHomeSeven />
-            <FeaturesHomeOne />
-            <CounterArea />
-            <DownloadHomeTwo className="mb-0" />
-            <TeamHomeOne />
-            <PricingHomeTwo />
+            {/* <HeroHomeSeven/> */}
+            {/* <ShowCaseHomeSeven/> */}
+            <SliderShow/>
+            <SecondSection/>
+            <RobotFeature/>
+            <Lineup/>
+            {/* <CounterArea />
+            <DownloadHomeTwo className="mb-0" /> */}
+            <TeamMember />
+            {/* <PricingHomeTwo />
             <FaqHomeOne className="pt-90" />
             <BlogHomeOne />
-            <ProjectHomeOne />
-            <FooterHomeOne />
+            <ProjectHomeOne /> */}\
+            <Sponser/>
+            <Footer/>
         </>
     );
 }
