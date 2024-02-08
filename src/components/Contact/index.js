@@ -6,6 +6,9 @@ import Drawer from '../Mobile/Drawer';
 import HeaderNews from '../News/HeaderNews';
 import HeroNews from '../News/HeroNews';
 import Forms from './Forms';
+import HeaderHomeSeven from './HeaderHomeSeven';
+import Footer from './Footer';
+import { EmailResponse } from './EmailResponse';
 
 function Contact() {
     const [drawer, drawerAction] = useToggle(false);
@@ -13,16 +16,9 @@ function Contact() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderNews drawer={drawer} action={drawerAction.toggle} />
-            <HeroNews
-                title="Blogs"
-                breadcrumb={[
-                    { link: '/', title: 'home' },
-                    { link: '/news', title: 'Blogs' },
-                ]}
-            />
+            <HeaderHomeSeven/>
             <Forms />
-            <FooterHomeOne />
+            <Footer/>
             <BackToTop />
         </>
     );
