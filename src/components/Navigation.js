@@ -110,9 +110,9 @@ function Navigation({ lang = false }) {
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/news">
                             News <i className="fal" />
-                        </a>
+                        </Link>
                         {/* <ul className="sub-menu">
                             <li>
                                 <Link to="/news">News Page</Link>
