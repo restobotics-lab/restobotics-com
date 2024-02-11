@@ -7,7 +7,7 @@ import blogImg5 from '../../assets/images/Homepage Images/news (5).png';
 import blogImg6 from '../../assets/images/Homepage Images/news (6).png';
 import blogImg7 from '../../assets/images/Homepage Images/news (7).png';
 import blogImg8 from '../../assets/images/Homepage Images/news (8).png';
-
+//comment
 function Blogs() {
     return (
         <>
