@@ -30,9 +30,9 @@ function Blogs() {
                                 cooperation platform to foster the robot industry.
                                 </a>
                             </h3>
-                            <a className="read-more" href="single-post.html">
+                            {/* <a className="read-more" href="single-post.html">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -54,9 +54,9 @@ function Blogs() {
                                 by the Korean Food Promotion Agency's Overseas Korean Restaurant Council Workshop.
                                 </a>
                             </h3>
-                            <a className="read-more" href="/news/single-news">
+                            {/* <a className="read-more" href="/news/single-news">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -78,9 +78,9 @@ function Blogs() {
                                 to celebrate reaching 10,000 VD members.
                                 </a>
                             </h3>
-                            <a className="read-more" href="/news/single-news">
+                            {/* <a className="read-more" href="/news/single-news">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -100,9 +100,9 @@ function Blogs() {
                                 <a href="/news/single-news">Announcement of share certificate submission 
                                 due to stock split.</a>
                             </h3>
-                            <a className="read-more" href="/news/single-news">
+                            {/* <a className="read-more" href="/news/single-news">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -124,9 +124,9 @@ function Blogs() {
                                 in the First Half of 2023’.
                                 </a>
                             </h3>
-                            <a className="read-more" href="single-post.html">
+                            {/* <a className="read-more" href="single-post.html">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -149,9 +149,9 @@ function Blogs() {
                                 100 million won in start-up support.
                                 </a>
                             </h3>
-                            <a className="read-more" href="single-post.html">
+                            {/* <a className="read-more" href="single-post.html">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -172,9 +172,9 @@ function Blogs() {
                                  Open War', emerging local entertainment powerhouse... 2nd round spell war mission 
                                  showdown close match.</a>
                             </h3>
-                            <a className="read-more" href="single-post.html">
+                            {/* <a className="read-more" href="single-post.html">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
@@ -194,9 +194,9 @@ function Blogs() {
                                 <a href="single-post.html">VD Company opens ‘Inreaching Center’, a smart logistics center 
                                 dedicated to serving robots.</a>
                             </h3>
-                            <a className="read-more" href="single-post.html">
+                            {/* <a className="read-more" href="single-post.html">
                                 Read More<i className="fal fa-arrow-right"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
