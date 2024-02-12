@@ -2437,6 +2437,13 @@ p {
     rgba(255, 255, 255, 0.08) 100%
   );
 }
+.appie-single-service.appie-single-services-3.item-5 {
+  background: linear-gradient(
+    0deg,
+    rgba(85, 85, 85, 0.08) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
 .appie-single-service.appie-single-services-3.item-4 .icon {
   background-image: -moz-linear-gradient(110deg, #7759ed 0%, #ac97ff 100%);
   background-image: -webkit-linear-gradient(110deg, #7759ed 0%, #ac97ff 100%);
@@ -7207,6 +7214,26 @@ blockquote cite {
   /* For better cross-browser compatibility */
   -webkit-backdrop-filter: blur(2px);
 
+}
+
+.ai-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Text color */
+  font-size: 2rem; /* Text size */
+  text-align: center;
+  /* Add more styling as necessary */
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  /* Apply the blur effect */
+  backdrop-filter: blur(2px);
+  /* Optional: add a border to the blurry background for better visibility */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  /* For better cross-browser compatibility */
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
 }
 
 .appie-showcase-slider .slick-dots {

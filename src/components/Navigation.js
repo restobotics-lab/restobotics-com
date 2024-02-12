@@ -122,9 +122,9 @@ function Navigation({ lang = false }) {
                             </li>
                         </ul> */}
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/contact">Contact</Link>
-                    </li>
+                    </li> */}
                 </ul>
             )}
         </>

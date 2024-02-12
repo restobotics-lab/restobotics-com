@@ -1,16 +1,14 @@
 import React from 'react'
-import singlePost from '../../assets/images/single-post/1.jpg';
-import author from '../../assets/images/single-post/author.png';
-import cmnt1 from '../../assets/images/single-post/c1.png';
-import cmnt2 from '../../assets/images/single-post/c2.png';
-import cmnt3 from '../../assets/images/single-post/c3.png';
+import singlePost from '../../assets/images/Homepage Images/single_news.png';
 
 const NewsTemplate = () => {
     return (
         <>
             <div className="single-post-area">
-                <h1>VD Company and Kwangwoon University establish an industry-academia 
-                                cooperation platform to foster the robot industry.</h1>
+                <h1 className='text-center'>VD Company and Kwangwoon University establish an industry-academia
+                    cooperation platform to foster the robot industry.</h1>
+                <span>September 21, 2023</span>
+                <hr></hr>
                 <p>
                     Tosser posh grub he lost his bottle bamboozled show off show off pick your nose
                     and blow off cheesed off starkers what a load of rubbish, Jeffrey bubble and
@@ -34,7 +32,7 @@ const NewsTemplate = () => {
                     kyver cack zonked tickety boo mush morish.
                 </p>
                 <div className="post-thumb">
-                    <img src={singlePost} alt="" />
+                    <img className='mx-auto d-block' src={singlePost} alt="" />
                 </div>
                 <h4 className="article-title">Logotype Masterclass with Jessica Hische</h4>
                 <p>
@@ -58,13 +56,13 @@ const NewsTemplate = () => {
                     brown bread cheeky bite your arm off chip shop bugger all mate, my lady down the
                     pub is faff about pukka.
                 </p>
-                <blockquote>
+                {/* <blockquote>
                     <p>
                         I don't want no agro brilliant are you taking the piss skive off super boot
                         chancer don't get shirty.
                     </p>
                     <cite>Indigo Violet</cite>
-                </blockquote>
+                </blockquote> */}
                 <p>
                     That faff about the full monty blower bubble and squeak cheeky old matie boy
                     burke, the bee's knees what a load of rubbish golly gosh mufty is Elizabeth
@@ -81,12 +79,6 @@ const NewsTemplate = () => {
                     bladdered A bit of how's your father arse over tit do one chimney pot tomfoolery
                     porkies owt to do with me spiffing good time zonked.
                 </p>
-                <div className="post-tags">
-                    <h5>Tags:</h5>
-                    <a href="#">Bisy LMS</a>
-                    <a href="#">Design</a>
-                    <a href="#">General</a>
-                </div>
                 <div className="post-share">
                     <h5>Share:</h5>
                     <a className="fac" href="#">
