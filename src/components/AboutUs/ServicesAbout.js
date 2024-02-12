@@ -3,18 +3,17 @@ import React from 'react';
 function ServicesAbout() {
     return (
         <>
-            <section className="appie-services-2-area pt-90 pb-55" id="service">
+            <section className="appie-services-2-area pb-55" id="service">
                 <div className="container">
                     <div className="row align-items-end">
-                        <div className="col-lg-6 col-md-8">
+                        <div className="col-lg-12 col-md-8">
                             <div className="appie-section-title">
-                                <h3 className="appie-title">We’re driven by our values</h3>
-                                <p>The app provides design and digital marketing. </p>
+                                <h3 className="appie-title text-center">Various application scenarios</h3>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -26,7 +25,7 @@ function ServicesAbout() {
                                 <h4 className="title">Building</h4>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about item-2 mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -38,7 +37,7 @@ function ServicesAbout() {
                                 <h4 className="title">Gas Station</h4>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about item-3 mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -50,7 +49,7 @@ function ServicesAbout() {
                                 <h4 className="title">Hospital</h4>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about item-4 mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -62,7 +61,7 @@ function ServicesAbout() {
                                 <h4 className="title">School</h4>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about item-5 mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -74,7 +73,7 @@ function ServicesAbout() {
                                 <h4 className="title">Shopping Mall</h4>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-2 col-md-6">
                             <div
                                 className="appie-single-service-2 appie-single-service-about item-6 mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"

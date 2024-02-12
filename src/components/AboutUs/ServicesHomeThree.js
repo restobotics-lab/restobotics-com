@@ -103,6 +103,40 @@ function ServicesHomeThree() {
                             </div>
                         </div>
                     </div>
+                    <div className="col-lg-12 col-md-8 mt-30">
+                        <div className="appie-section-title">
+                            <h5>Computer Vision</h5>
+                            <p>Computer vision is a field of research that gives computers the 
+                                same vision as humans and helps them find useful information by
+                                 analyzing photos or videos. VD Company learns the properties of 
+                                 image data through computer vision, which will lead the 4th Industrial 
+                                 Revolution, and provides various programming services.
+                            </p>
+                            <br></br>
+                            <h5>Sensor Fusion</h5>
+                            <p>Sensor fusion is a technology that creates a model or image of the surrounding 
+                                environment by integrating inputs from cameras, radar, lidar, and ultrasonic
+                                 waves. By complementing the strengths and weaknesses of each sensor, 
+                                 more accurate information can be created. 
+                            </p>
+                            <br></br>
+                            <h5>AI</h5>
+                            <p>
+                            By introducing computer vision recognition technology and automatic payment solutions,
+                             it becomes possible to recognize products and make payments. VD Company has solutions
+                              through AI to address recent issues such as labor shortage, high labor costs, and long
+                               working hours in convenience stores.
+                            </p>
+                            <br></br>
+                            <h5>Deep learning</h5>
+                            <p>
+                            Objects are detected and recognized using image information obtained through multiple 
+                            computer vision. It is possible to track the target's travel time and route by using 
+                            metadata information such as the time and location where the information was stored, and 
+                            provides a customer behavior analysis solution through learning.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

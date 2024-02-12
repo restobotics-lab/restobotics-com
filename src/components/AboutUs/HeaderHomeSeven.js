@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import logo from '../../assets/images/Homepage Images/logo.png';
 import StickyMenu from '../../lib/StickyMenu';
 import Navigation from '../Navigation';
-
+import { Link } from 'react-router-dom';
 function HeaderHomeSeven({ action }) {
     useEffect(() => {
         StickyMenu();
@@ -25,9 +25,13 @@ function HeaderHomeSeven({ action }) {
                                     <Navigation />
                                 </div>
                             </div>
-                            {/* <div className="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
+
+                            <div className="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
                                 <div className="appie-btn-box text-right">
-                                    <a className="login-btn" href="#">
+                                    <Link className="main-btn ml-30" to="/contact">
+                                        <i className="fal fa-phone"></i> Contact us
+                                    </Link>
+                                    {/* <a className="login-btn" href="#">
                                         <i className="fal fa-phone"></i> Contact us
                                     </a>
                                     <a className="main-btn ml-30" href="#">
@@ -38,9 +42,9 @@ function HeaderHomeSeven({ action }) {
                                         className="toggle-btn ml-30 canvas_open d-lg-none d-block"
                                     >
                                         <i className="fa fa-bars"></i>
-                                    </div>
+                                    </div> */}
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
