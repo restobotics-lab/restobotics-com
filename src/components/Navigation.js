@@ -92,7 +92,7 @@ function Navigation({ lang = false }) {
                                 <Link to="/robot1">Robot 1</Link>
                             </li>
                             <li>
-                                <Link to="/about-us-another">Robot 2</Link>
+                                <Link to="/robot1">Robot 2</Link>
                             </li>
                         </ul>
                     </li>
