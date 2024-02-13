@@ -7,6 +7,7 @@ import FirstSection from './FirstSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
 import ForthSection from './ForthSection';
+import FifthSection from './FifthSection';
 
 function Robot1() {
     const [drawer, drawerAction] = useToggle(false);
@@ -18,6 +19,7 @@ function Robot1() {
             <SecondSection/>
             <ThirdSection/>
             <ForthSection/>
+            {/* <FifthSection/> */}
             <Footer/>
         </>
     );

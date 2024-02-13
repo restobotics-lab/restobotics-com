@@ -111,7 +111,7 @@ function ServicesHomeThree() {
                             It is easy to manage products, customers, sales, and inventory/expiration date, and can operate 24 hours a day.
                             This is a system that allows payment using an app, credit card, or employee ID card.
                             </p>
-                            <video className='w-100 mt-50' controls autoPlay muted src={video1}></video>
+                            <video className='w-100 mt-50' loop autoPlay muted src={video1}></video>
                         </div>
                     </div>
                     <div className="col-lg-12 col-md-8 mt-30 pt-100">

@@ -98,7 +98,10 @@ h5 {
 h6 {
   font-size: 16px;
 }
-
+tr, td {
+  border-bottom: 1px solid black;
+  text-align: center;
+ }
 ul,
 ol {
   margin: 0px;
