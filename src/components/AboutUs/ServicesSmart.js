@@ -106,17 +106,17 @@ function ServicesHomeThree() {
                     </div>
                     <div className="col-lg-12 col-md-8 mt-30 pt-100">
                         <div className="appie-section-title text-center">
-                            <h5>OUR SERVICES</h5>
+                            <h3 className="appie-title">OUR SERVICES</h3>
                             <p className=''>This is an AI vending machine that applies computer vision technology and automatic payment solutions.
                             It is easy to manage products, customers, sales, and inventory/expiration date, and can operate 24 hours a day.
                             This is a system that allows payment using an app, credit card, or employee ID card.
                             </p>
-                            <video className='w-100 mt-50' controls src={video1}></video>
+                            <video className='w-100 mt-50' controls autoPlay muted src={video1}></video>
                         </div>
                     </div>
                     <div className="col-lg-12 col-md-8 mt-30 pt-100">
                         <div className="appie-section-title text-center">
-                            <h5>APPLICATION</h5>
+                            <h3 className="appie-title">APPLICATION</h3>
                             <p className=''>Experience the beginning of a new retail world, The Pyeonbox app. 
                                 Using the app, you can easily manage products, customers, sales, and inventory/expiration date.
                             </p>
@@ -128,7 +128,7 @@ function ServicesHomeThree() {
                     </div>
                     <div className="col-lg-12 col-md-8 mt-30 pt-100">
                         <div className="appie-section-title text-center">
-                            <h5>APPLIED STORE</h5>
+                            <h3 className="appie-title">APPLIED STORE</h3>
                             <p className=''>The Convenience Box is already being used in various private 
                             offices, companies, hotels, study cafes, camping sites, etc.
                             </p>
