@@ -50,10 +50,10 @@ function Footer({ className }) {
                                 <h4 className="title text-light">Company</h4>
                                 <ul>
                                     <li>
-                                        <Link to="/about-us">About Us</Link>
+                                        <Link className='text-light' to="/about-us">About Us</Link>
                                     </li>
                                     <li>
-                                        <Link to="/news">Blog</Link>
+                                        <Link className='text-light' to="/news">Blog</Link>
                                     </li>
 
                                 </ul>
@@ -64,13 +64,13 @@ function Footer({ className }) {
                                 <h4 className="title text-light">Support</h4>
                                 <ul>
                                     <li>
-                                        <Link to="/contact">Contact</Link>
+                                        <Link className='text-light' to="/contact">Contact</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Privacy Policy</a>
+                                        <a className='text-light' href="#">Privacy Policy</a>
                                     </li>
                                     <li>
-                                        <a href="#">Careers</a>
+                                        <a className='text-light' href="#">Careers</a>
                                     </li>
                                 </ul>
                             </div>
@@ -81,17 +81,17 @@ function Footer({ className }) {
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <i className="fal fa-envelope" /> support@restobotics.com
+                                            <i className="fal fa-envelope text-light" /> <div className='text-light'>support@restobotics.com</div>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i className="fal fa-phone" /> +(642) 342 762 44
+                                            <i className="fal fa-phone text-light" /> <div className='text-light'>+(642) 342 762 44</div> 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i className="fal fa-map-marker-alt" /> Ohio, USA
+                                            <i className="fal fa-map-marker-alt text-light" /> <div className='text-light'>Ohio, USA</div>
                                         </a>
                                     </li>
                                 </ul>
@@ -100,7 +100,7 @@ function Footer({ className }) {
                     </div>
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="footer-copyright d-flex align-items-center justify-content-between pt-35">
+                            <div className="footer-copyright d-flex align-items-center justify-content-between pt-35 ">
                                 {/* <div className="apps-download-btn">
                                     <ul>
                                         <li>
@@ -116,8 +116,8 @@ function Footer({ className }) {
                                         </li>
                                     </ul>
                                 </div> */}
-                                <div className="copyright-text">
-                                    <p>Copyright © 2024 Appie. All rights reserved.</p>
+                                <div className="copyright-text ">
+                                    <p className='text-light'>Copyright © 2024 RestoBotics. All rights reserved.</p>
                                 </div>
                             </div>
                         </div>
