@@ -10,7 +10,7 @@ const SecondSection = () => {
                             <h1 className='text-light'>Self-driving serving robot</h1>
                             <h2 className='text-light'>PuduBot
                             </h2>
-                            <video className='w-100 mt-50' autoPlay muted controls src={video1}></video>
+                            <video className='w-100 mt-50' autoPlay muted loop src={video1}></video>
                         </div>
                     </div>
                 </div>

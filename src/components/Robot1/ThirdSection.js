@@ -9,7 +9,7 @@ const ThirdSection = () => {
                         <h1 className=''>Obstacle Recognition</h1>
                         <p className=''>The innovative 3D obstacle avoidance solution in collaboration with Intel enables fast obstacle recognition and safe driving.
                         </p>
-                        <video className='w-100 mt-50' autoPlay muted controls src={video1}></video>
+                        <video className='w-100 mt-50' autoPlay muted loop src={video1}></video>
                     </div>
                 </div>
             </div>
