@@ -10,6 +10,7 @@ import Sponser from './Sponser';
 import TeamMember from './TeamMember';
 import Footer from './Footer';
 import SliderShow from './SliderShow';
+import BackToTop from '../BackToTop';
 
 function HomeSeven() {
     const [drawer, drawerAction] = useToggle(false);
@@ -32,6 +33,7 @@ function HomeSeven() {
             <ProjectHomeOne /> */}\
             <Sponser/>
             <Footer/>
+            <BackToTop />
         </>
     );
 }

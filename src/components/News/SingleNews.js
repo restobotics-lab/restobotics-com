@@ -6,7 +6,8 @@ import Drawer from '../Mobile/Drawer';
 import Blog from './Blog';
 import BlogSideBar from './BlogSideBar';
 import HeaderNews from './HeaderNews';
-import HeroNews from './HeroNews';
+import Footer from './Footer';
+import NewsTemplate from './NewsTemplate';
 
 function SingleNews() {
     const [drawer, drawerAction] = useToggle(false);
@@ -14,27 +15,24 @@ function SingleNews() {
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
             <HeaderNews action={drawerAction.toggle} />
-            <HeroNews
+            {/* <HeroNews
                 title="Blog"
                 breadcrumb={[
                     { link: '/', title: 'home' },
                     { link: '/news', title: 'Blogs' },
                     { link: '/news/single-news', title: 'Blog' },
                 ]}
-            />
+            /> */}
             <section className="blogpage-section">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-8 col-md-7">
-                            <Blog />
-                        </div>
-                        <div className="col-lg-4 col-md-5">
-                            <BlogSideBar />
+                        <div className="col-lg-12 mt-30">
+                            <NewsTemplate />
                         </div>
                     </div>
                 </div>
             </section>
-            <FooterHomeOne />
+            <Footer/>
             <BackToTop />
         </>
     );

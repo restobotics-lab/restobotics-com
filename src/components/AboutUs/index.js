@@ -9,6 +9,10 @@ import HeaderAbout from './HeaderAbout';
 import HeroAbout from './HeroAbout';
 import ServicesAbout from './ServicesAbout';
 import TeamAbout from './TeamAbout';
+import HeaderHomeSeven from './HeaderHomeSeven';
+import Footer from '../News/Footer';
+import FirstSection from './FirstSection';
+import ServicesHomeThree from './ServicesHomeThree';
 
 function AboutUs() {
     const [drawer, drawerAction] = useToggle(false);
@@ -16,13 +20,11 @@ function AboutUs() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderAbout drawer={drawer} action={drawerAction.toggle} />
-            <HeroAbout />
+            <HeaderHomeSeven/>
+            <FirstSection/>
+            <ServicesHomeThree/>
             <ServicesAbout />
-            <TeamAbout />
-            <SponserHomeTwo />
-            <SignupHomeEight />
-            <FooterHomeOne className="appie-footer-about-area" />
+            <Footer/>
             <BackToTop />
         </>
     );

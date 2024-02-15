@@ -23,6 +23,7 @@ import Shops from './components/Shops';
 import ShopDetails from './components/Shops/Details';
 import Robot1 from './components/Robot1';
 
+
 function Routes() {
     const [loading, setLoading] = useState(true);
     useEffect(() => {

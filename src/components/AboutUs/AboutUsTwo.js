@@ -6,30 +6,26 @@ import TestimonialHomeEight from '../HomeEight/TestimonialHomeEight';
 import WorkPartHomeEight from '../HomeEight/WorkPartHomeEight';
 import FooterHomeOne from '../HomeOne/FooterHomeOne';
 import FunFactHomeThree from '../HomeThree/FunFactHomeThree';
-import ServicesHomeThree from '../HomeThree/ServicesHomeThree';
+import ServicesSmart from '../AboutUs/ServicesSmart';
 import Drawer from '../Mobile/Drawer';
 import HeaderNews from '../News/HeaderNews';
 import HeroNews from '../News/HeroNews';
+import HeaderHomeSeven from './HeaderHomeSeven';
+import FirstSectionSmart from './FirstSectionSmart';
+import HeroAbout from './HeroAbout';
+import Footer from '../News/Footer';
+import SliderShowSmart from './SliderShowSmart';
 
 function AboutUsTwo() {
     const [drawer, drawerAction] = useToggle(false);
     return (
         <>
-            <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderNews action={drawerAction.toggle} />
-            <HeroNews
-                title="About Us 2"
-                breadcrumb={[
-                    { link: '/', title: 'Home' },
-                    { link: '/about-us-another', title: 'About us' },
-                ]}
-            />
-            <ServicesHomeThree style={{ paddingTop: '90px' }} />
-            <FunFactHomeThree />
-            <WorkPartHomeEight className="pt-100" />
-            <TestimonialHomeEight />
-            <SignupHomeEight />
-            <FooterHomeOne className="appie-footer-about-area" />
+            <Drawer drawer={drawer} action={drawerAction.toggle} />\
+            <HeaderHomeSeven/>
+            <FirstSectionSmart/>
+            <ServicesSmart/>
+            <SliderShowSmart/>
+            <Footer/>
             <BackToTop />
         </>
     );

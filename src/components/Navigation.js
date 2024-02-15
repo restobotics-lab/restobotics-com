@@ -92,7 +92,7 @@ function Navigation({ lang = false }) {
                                 <Link to="/robot1">Robot 1</Link>
                             </li>
                             <li>
-                                <Link to="/about-us-another">Robot 2</Link>
+                                <Link to="/robot1">Robot 2</Link>
                             </li>
                         </ul>
                     </li>
@@ -110,9 +110,9 @@ function Navigation({ lang = false }) {
                         </ul>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link to="/news">
                             News <i className="fal" />
-                        </a>
+                        </Link>
                         {/* <ul className="sub-menu">
                             <li>
                                 <Link to="/news">News Page</Link>
@@ -122,9 +122,9 @@ function Navigation({ lang = false }) {
                             </li>
                         </ul> */}
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/contact">Contact</Link>
-                    </li>
+                    </li> */}
                 </ul>
             )}
         </>
