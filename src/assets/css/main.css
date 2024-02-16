@@ -306,7 +306,7 @@ p {
 .offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;
-  background: #fff;
+  background: #383838;
   z-index: 9999;
   top: 0;
   height: 100%;

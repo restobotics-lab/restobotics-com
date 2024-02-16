@@ -29,7 +29,7 @@ function HeaderHomeSeven({ action }) {
                                 onClick={(e) => action(e)}
                                 className="toggle-btn ml-30 canvas_open d-lg-none d-block"
                             >
-                                <i className="fa fa-bars"></i>
+                                <i className="fa fa-bars text-light"></i>
                             </div>
                             {/* <div className="col-lg-4  col-md-7 col-sm-6 col-6 order-2 order-sm-3">
                                 <div className="appie-btn-box text-right">

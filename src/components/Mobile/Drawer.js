@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/Homepage Images/logo.png';
 
 function Drawer({ drawer, action, lang }) {
     const [itemSize, setSize] = useState('0px');
@@ -22,13 +22,12 @@ function Drawer({ drawer, action, lang }) {
                         className={`off_canvars_overlay ${drawer ? 'active' : ''}`}
                     ></div>
                     <div className="offcanvas_menu">
-                        <div className="container-fluid">
-                            <div className="row">
+                        <div className="container-fluid ">
+                            <div className="row" >
                                 <div className="col-12">
                                     <div
-                                        className={`offcanvas_menu_wrapper ${
-                                            drawer ? 'active' : ''
-                                        }`}
+                                        className={`offcanvas_menu_wrapper ${drawer ? 'active' : ''
+                                            }`}
                                     >
                                         <div className="canvas_close">
                                             <a href="#" onClick={(e) => action(e)}>
@@ -229,26 +228,30 @@ function Drawer({ drawer, action, lang }) {
                         onClick={(e) => action(e)}
                         className={`off_canvars_overlay ${drawer ? 'active' : ''}`}
                     ></div>
-                    <div className="offcanvas_menu">
-                        <div className="container-fluid">
-                            <div className="row">
-                                <div className="col-12">
+                    <div className="offcanvas_menu " >
+                        <div className="container-fluid" >
+                            <div className="row" >
+                                <div className="col-12" style={{backgroundColor: '#000'}}>
                                     <div
-                                        className={`offcanvas_menu_wrapper ${
-                                            drawer ? 'active' : ''
-                                        }`}
+                                        className={`offcanvas_menu_wrapper ${drawer ? 'active' : ''
+                                            }`}
                                     >
                                         <div className="canvas_close">
-                                            <a href="#" onClick={(e) => action(e)}>
+                                            <a style={{background: '#383838', border: '1px white solid'}}  href="#" onClick={(e) => action(e)}>
                                                 <i className="fa fa-times"></i>
                                             </a>
                                         </div>
                                         <div className="offcanvas-brand text-center mb-40">
-                                            <img src={logo} alt="" />
+                                            <img style={{scale: '100%'}} src={logo} alt="" />
                                         </div>
                                         <div id="menu" className="text-left ">
                                             <ul className="offcanvas_main_menu">
-                                                <li
+                                                <li>
+                                                    <Link className='text-light' to='/'>
+                                                        Home <i className="fal" />
+                                                    </Link>
+                                                </li>
+                                                {/* <li
                                                     onClick={(e) => handler(e, 'home')}
                                                     id="home"
                                                     className="menu-item-has-children active"
@@ -295,52 +298,63 @@ function Drawer({ drawer, action, lang }) {
                                                             <Link to="/home-rtl">Home Rtl</Link>
                                                         </li>
                                                     </ul>
-                                                </li>
-                                                <li
+                                                </li> */}
+                                                {/* <li
                                                     onClick={(e) => handler(e, 'service')}
                                                     id="service"
                                                     className="menu-item-has-children active"
                                                 >
                                                     <a href="/service">Service</a>
-                                                </li>
+                                                </li> */}
                                                 <li
-                                                    onClick={(e) => handler(e, 'pages')}
-                                                    id="pages"
+                                                    onClick={(e) => handler(e, 'robots')}
+                                                    id="robots"
                                                     className="menu-item-has-children active"
                                                 >
                                                     <span className="menu-expand">
                                                         <i className="fa fa-angle-down"></i>
                                                     </span>
-                                                    <a href="#">Pages</a>
+                                                    <a className='text-light' href="#">Robot</a>
                                                     <ul
                                                         className="sub-menu"
                                                         style={{
                                                             height:
-                                                                item === 'pages' ? itemSize : '0px',
+                                                                item === 'robots' ? itemSize : '0px',
                                                         }}
                                                     >
                                                         <li>
-                                                            <Link to="/about-us">About</Link>
+                                                            <Link className='text-light' to="/robot1">Robot 1</Link>
                                                         </li>
                                                         <li>
-                                                            <Link to="/about-us-another">
-                                                                About 2
-                                                            </Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/error">Error</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/shops">Shops</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/shops/shop-details">
-                                                                Shop details
-                                                            </Link>
+                                                            <Link className='text-light' to="/robot1">Robot 2</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li
+                                                    onClick={(e) => handler(e, 'airetail')}
+                                                    id="airetail"
+                                                    className="menu-item-has-children active"
+                                                >
+                                                    <span className="menu-expand">
+                                                        <i className="fa fa-angle-down"></i>
+                                                    </span>
+                                                    <a className='text-light' href="#">AI Retail Solution</a>
+                                                    <ul
+                                                        className="sub-menu"
+                                                        style={{
+                                                            height:
+                                                                item === 'airetail' ? itemSize : '0px',
+                                                        }}
+                                                    >
+                                                        <li>
+                                                            <Link className='text-light' to="/about-us">AI Store</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className='text-light' to="/about-us-another">Smart Store</Link>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                {/* <li
                                                     onClick={(e) => handler(e, 'news')}
                                                     id="news"
                                                     className="menu-item-has-children active"
@@ -365,13 +379,13 @@ function Drawer({ drawer, action, lang }) {
                                                             </Link>
                                                         </li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
                                                 <li
-                                                    onClick={(e) => handler(e, 'contact')}
-                                                    id="contact"
+                                                    onClick={(e) => handler(e, 'news')}
+                                                    id="news"
                                                     className="menu-item-has-children active"
                                                 >
-                                                    <Link to="/contact">Contact</Link>
+                                                    <Link className='text-light' to="/news">News</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -379,22 +393,22 @@ function Drawer({ drawer, action, lang }) {
                                             <ul className="text-center">
                                                 <li>
                                                     <a href="$">
-                                                        <i className="fab fa-facebook-f"></i>
+                                                        <i className="fab fa-facebook-f text-light"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="$">
-                                                        <i className="fab fa-twitter"></i>
+                                                        <i className="fab fa-twitter text-light"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="$">
-                                                        <i className="fab fa-instagram"></i>
+                                                        <i className="fab fa-instagram text-light"></i>
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="$">
-                                                        <i className="fab fa-dribbble"></i>
+                                                        <i className="fab fa-dribbble text-light"></i>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -402,22 +416,20 @@ function Drawer({ drawer, action, lang }) {
                                         <div className="footer-widget-info">
                                             <ul>
                                                 <li>
-                                                    <a href="#">
-                                                        <i className="fal fa-envelope"></i>{' '}
-                                                        support@appie.com
+                                                    <Link className='text-light' to="/contact">
+                                                        <i className="fal fa-envelope text-light"></i>{' '}
+                                                        shawnlin@restobostics.com
+                                                    </Link>
+                                                </li>
+                                                <li>
+                       =                             <a className='text-light' href="#">
+                                                        <i className="fal fa-phone text-light"></i> 2342056382
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">
-                                                        <i className="fal fa-phone"></i> +(642) 342
-                                                        762 44
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <i className="fal fa-map-marker-alt"></i>{' '}
-                                                        442 Belle Terre St Floor 7, San Francisco,
-                                                        AV 4206
+                                                    <a className='text-light' href="#">
+                                                        <i className="fal fa-map-marker-alt text-light"></i>{' '}
+                                                        800 E Summit St, Kent, OH 44240
                                                     </a>
                                                 </li>
                                             </ul>
