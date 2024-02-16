@@ -4,11 +4,11 @@ const FirstSection = () => {
     return (
         <>
             <div>
-                <div className="appie-showcase-item mt-30">
+                <div className="appie-showcase-item pt-70">
                     <a className="appie-image-popup">
                         <img src={ai_main} alt="" />
                         <div className="ai-text-overlay">UNMANNED STORE BASED ON AI, COMPUTER VISION, SENSOR FUSION, AND DEEP LEARNING
-                        <p className='text-light display-2 text-bold'><b>TO THE STORES</b></p></div>
+                        <p className='text-light text-bold' style={{fontSize: '4vw', margin: '5%'}}><b>TO THE STORES</b></p></div>
                     </a>
                 </div>
             </div>

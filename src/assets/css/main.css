@@ -7214,16 +7214,17 @@ blockquote cite {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff; /* Text color */
-  font-size: 8rem; /* Text size */
+  color: #fff;/* Text color *//* Text size */
   text-align: center;
+  font-size: 7vw;
   /* Add more styling as necessary */
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   /* Apply the blur effect */
   backdrop-filter: blur(2px);
   /* Optional: add a border to the blurry background for better visibility */
   border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
   /* For better cross-browser compatibility */
   -webkit-backdrop-filter: blur(2px);
 
@@ -7235,18 +7236,18 @@ blockquote cite {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff; /* Text color */
-  font-size: 2rem; /* Text size */
   text-align: center;
+  font-size: 2vw;
   /* Add more styling as necessary */
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   /* Apply the blur effect */
   backdrop-filter: blur(2px);
   /* Optional: add a border to the blurry background for better visibility */
   border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
   /* For better cross-browser compatibility */
   -webkit-backdrop-filter: blur(2px);
-  border-radius: 10px;
 }
 
 .appie-showcase-slider .slick-dots {
