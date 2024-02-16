@@ -50,17 +50,25 @@ function Footer({ className }) {
                                 <h4 className="title text-light">Company</h4>
                                 <ul>
                                     <li>
-                                        <Link className='text-light' to="/about-us">About Us</Link>
+                                        <Link className='text-light' to="/robot1">Robot 1</Link>
                                     </li>
                                     <li>
-                                        <Link className='text-light' to="/news">Blog</Link>
+                                        <Link className='text-light' to="/robot1">Robot 2</Link>
                                     </li>
-
+                                    <li>
+                                        <Link className='text-light' to="/about-us">AI Store</Link>
+                                    </li>
+                                    <li>
+                                        <Link className='text-light' to="/about-us-another">Smart Store</Link>
+                                    </li>
+                                    <li>
+                                        <Link className='text-light' to="/news">News</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
-                            <div className="footer-navigation">
+                            {/* <div className="footer-navigation">
                                 <h4 className="title text-light">Support</h4>
                                 <ul>
                                     <li>
@@ -73,25 +81,25 @@ function Footer({ className }) {
                                         <a className='text-light' href="#">Careers</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <div className="footer-widget-info">
                                 <h4 className="title text-light">Get In Touch</h4>
                                 <ul>
                                     <li>
+                                        <Link to="/contact">
+                                            <i className="fal fa-envelope text-light" /> <div className='text-light'>shawnlin@restobostics.com</div>
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <a href="#">
-                                            <i className="fal fa-envelope text-light" /> <div className='text-light'>support@restobotics.com</div>
+                                            <i className="fal fa-phone text-light" /> <div className='text-light'>2342056382</div> 
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i className="fal fa-phone text-light" /> <div className='text-light'>+(642) 342 762 44</div> 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i className="fal fa-map-marker-alt text-light" /> <div className='text-light'>Ohio, USA</div>
+                                            <i className="fal fa-map-marker-alt text-light" /> <div className='text-light'>800 E Summit St, Kent, OH 44240</div>
                                         </a>
                                     </li>
                                 </ul>

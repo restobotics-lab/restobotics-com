@@ -1,7 +1,7 @@
 import React from 'react';
-import Sponser1 from '../../assets/images/sponser-1.png';
+import Sponser1 from '../../assets/images/Homepage Images/Group-3.png';
 import Sponser10 from '../../assets/images/sponser-10.png';
-import Sponser2 from '../../assets/images/sponser-2.png';
+import Sponser2 from '../../assets/images/Homepage Images/group 4.jpeg';
 import Sponser3 from '../../assets/images/sponser-3.png';
 import Sponser4 from '../../assets/images/sponser-4.png';
 import Sponser5 from '../../assets/images/sponser-5.png';
@@ -35,7 +35,8 @@ function Sponser({ className }) {
                                 <div className="sponser-item">
                                     <img src={Sponser2} alt="" />
                                 </div>
-                                <div className="sponser-item">
+
+                                {/* <div className="sponser-item">
                                     <img src={Sponser3} alt="" />
                                 </div>
                                 <div className="sponser-item">
@@ -60,7 +61,7 @@ function Sponser({ className }) {
                                 </div>
                                 <div className="sponser-item">
                                     <img src={Sponser10} alt="" />
-                                </div>
+    </div> */}
                             </div>
                         </div>
                     </div>

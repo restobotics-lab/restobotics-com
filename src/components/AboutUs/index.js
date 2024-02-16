@@ -20,7 +20,7 @@ function AboutUs() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderHomeSeven/>
+            <HeaderHomeSeven action={drawerAction.toggle}/>
             <FirstSection/>
             <ServicesHomeThree/>
             <ServicesAbout />

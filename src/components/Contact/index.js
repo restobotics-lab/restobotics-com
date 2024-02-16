@@ -16,7 +16,7 @@ function Contact() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />
-            <HeaderHomeSeven/>
+            <HeaderHomeSeven action={drawerAction.toggle}/>
             <Forms />
             <Footer/>
             <BackToTop />

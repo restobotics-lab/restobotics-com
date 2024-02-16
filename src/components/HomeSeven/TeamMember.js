@@ -15,12 +15,12 @@ function TeamMember({ className }) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="appie-section-title text-center">
-                                <h3 className="appie-title">Meet our Team Members</h3>
+                                <h3 className="appie-title">Meet our Founders</h3>
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6">
+                    <div className='row'>
+                        <div className="col-lg-4 col-md-6" style={{margin: 'auto'}}>
                             <div
                                 className="appie-team-item mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -30,18 +30,13 @@ function TeamMember({ className }) {
                                     <img src={kim} alt="" />
                                     <ul>
                                         <li>
-                                            <a href="#">
-                                                <i className="fab fa-facebook-f" />
+                                            <a href="https://www.linkedin.com/in/hoonywiz/">
+                                                <i className="fab fa-linkedin" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i className="fab fa-twitter" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i className="fab fa-pinterest-p" />
+                                            <a href="https://scholar.google.com/citations?user=fsH0h1EAAAAJ&hl=en">
+                                                <i className="fab fa-google" />
                                             </a>
                                         </li>
                                     </ul>
@@ -52,7 +47,7 @@ function TeamMember({ className }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6">
+                        {/* <div className="col-lg-4 col-md-6">
                             <div
                                 className="appie-team-item mt-30 wow animated fadeInUp"
                                 data-wow-duration="2000ms"
@@ -115,7 +110,7 @@ function TeamMember({ className }) {
                                     <span>Software Engineer & Developer</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* <div className="col-lg-3 col-md-6">
                             <div
                                 className="appie-team-item mt-30 wow animated fadeInUp"
@@ -148,14 +143,14 @@ function TeamMember({ className }) {
                                 </div>
                             </div>
                         </div> */}
-                        <div className="col-lg-12">
+                        {/* <div className="col-lg-12">
                             <div className="team-btn text-center mt-50">
                                 <a className="main-btn" href="#">
                                     {' '}
                                     View all Members <i className="fal fa-arrow-right" />
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

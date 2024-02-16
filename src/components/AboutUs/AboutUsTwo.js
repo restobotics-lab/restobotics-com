@@ -21,7 +21,7 @@ function AboutUsTwo() {
     return (
         <>
             <Drawer drawer={drawer} action={drawerAction.toggle} />\
-            <HeaderHomeSeven/>
+            <HeaderHomeSeven action={drawerAction.toggle}/>
             <FirstSectionSmart/>
             <ServicesSmart/>
             <SliderShowSmart/>
