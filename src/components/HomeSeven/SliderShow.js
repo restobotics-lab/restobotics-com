@@ -42,44 +42,39 @@ function SliderShow() {
     return (
         <>
             <section className="appie-hero-area appie-hero-6-area appie-hero-7-area">
-                <SimpleReactLightbox>
-                    <SRLWrapper>
-                        <div style={{ width: '100%', margin: '0 auto' }}>
-                            <div className="row appie-showcase-slider">
-                                <div className="col-lg-12">
-                                    <Slider ref={sliderRef} {...settings}>
-                                        <div>
-                                            <div className="appie-showcase-item mt-30">
-                                                <a className="appie-image-popup">
-                                                    <img src={main3} alt="" />
-                                                    <div className="slider-text-overlay">Robot</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="appie-showcase-item mt-30">
-                                                <a className="appie-image-popup">
-                                                    <img src={main2} alt="" />
-                                                    <div className="slider-text-overlay">AI Retail Store</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="appie-showcase-item mt-30">
-                                                <a className="appie-image-popup">
-                                                    <img src={main1} alt="" />
-                                                    <div className="slider-text-overlay">Smart Store</div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </Slider>
+                <div style={{ width: '100%', margin: '0 auto' }}>
+                    <div className="row appie-showcase-slider">
+                        <div className="col-lg-12">
+                            <Slider ref={sliderRef} {...settings}>
+                                <div>
+                                    <div className="appie-showcase-item mt-30">
+                                        <a className="appie-image-popup">
+                                            <img src={main3} alt="" />
+                                            <div className="slider-text-overlay">Robot</div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
+                                <div>
+                                    <div className="appie-showcase-item mt-30">
+                                        <a className="appie-image-popup">
+                                            <img src={main2} alt="" />
+                                            <div className="slider-text-overlay">AI Retail Store</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="appie-showcase-item mt-30">
+                                        <a className="appie-image-popup">
+                                            <img src={main1} alt="" />
+                                            <div className="slider-text-overlay">Smart Store</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </Slider>
                         </div>
+                    </div>
+                </div>
 
-
-                    </SRLWrapper>
-                </SimpleReactLightbox>
             </section>
         </>
     );

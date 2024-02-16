@@ -33,12 +33,12 @@ function HeaderHomeSeven({ action }) {
                                     <Link className="main-btn ml-30" to="/contact">
                                         <i className="fal fa-phone"></i> Contact us
                                     </Link>
-                                    {/* <div
+                                    <div
                                         onClick={(e) => action(e)}
                                         className="toggle-btn ml-30 canvas_open d-lg-none d-block"
                                     >
                                         <i className="fa fa-bars"></i>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                         </div>

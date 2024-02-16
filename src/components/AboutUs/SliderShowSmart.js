@@ -43,49 +43,47 @@ function SliderShowSmart() {
     return (
         <>
             <section className="appie-hero-area-smart">
-                <SimpleReactLightbox>
-                    <SRLWrapper>
-                        <div className='container'>
-                            <div style={{ width: '100%', margin: '0 auto' }}>
-                                <div className="row appie-showcase-slider">
-                                    <div className="col-lg-12">
-                                        <Slider ref={sliderRef} {...settings}>
-                                            <div>
-                                                <div className="appie-showcase-item mt-30">
-                                                    <a className="appie-image-popup">
-                                                        <img src={main4} alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="appie-showcase-item mt-30">
-                                                    <a className="appie-image-popup">
-                                                        <img src={main3} alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="appie-showcase-item mt-30">
-                                                    <a className="appie-image-popup">
-                                                        <img src={main2} alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className="appie-showcase-item mt-30">
-                                                    <a className="appie-image-popup">
-                                                        <img src={main1} alt="" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </Slider>
-                                    </div>
-                                </div>
-                            </div>
 
+                <div className='container'>
+                    <div style={{ width: '100%', margin: '0 auto' }}>
+                        <div className="row appie-showcase-slider">
+                            <div className="col-lg-12">
+                                <Slider ref={sliderRef} {...settings}>
+                                    <div>
+                                        <div className="appie-showcase-item mt-30">
+                                            <a className="appie-image-popup">
+                                                <img src={main4} alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="appie-showcase-item mt-30">
+                                            <a className="appie-image-popup">
+                                                <img src={main3} alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="appie-showcase-item mt-30">
+                                            <a className="appie-image-popup">
+                                                <img src={main2} alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="appie-showcase-item mt-30">
+                                            <a className="appie-image-popup">
+                                                <img src={main1} alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </Slider>
+                            </div>
                         </div>
-                    </SRLWrapper>
-                </SimpleReactLightbox>
+                    </div>
+
+                </div>
+
             </section>
         </>
     );
