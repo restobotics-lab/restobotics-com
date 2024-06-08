@@ -1,12 +1,12 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Svg from './Svg';
 
 function Error() {
-    const history = useHistory();
+    const navigate = useNavigate();
     const goBack = (e) => {
         e.preventDefault();
-        history.goBack();
+        navigate(-1); // Go back to the previous page
     };
 
     return (
@@ -18,7 +18,7 @@ function Error() {
                             <div className="appie-error-content text-center">
                                 <Svg />
                                 <span>Sorry!</span>
-                                <h3 className="title">The page can’t be found.</h3>
+                                <h3 className="title">The page can't be found.</h3>
                                 <p>
                                     The page you're looking for isn't available. Use the go back
                                     button below

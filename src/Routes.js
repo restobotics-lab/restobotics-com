@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutUs from './components/AboutUs';
 import AboutUsTwo from './components/AboutUs/AboutUsTwo';
 import Contact from './components/Contact';
@@ -23,8 +23,7 @@ import Shops from './components/Shops';
 import ShopDetails from './components/Shops/Details';
 import Robot1 from './components/Robot1';
 
-
-function Routes() {
+function AppRoutes() {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -44,30 +43,29 @@ function Routes() {
             <div className={`appie-visible ${loading === false ? 'active' : ''}`}>
                 <Router>
                     <ScrollToTop>
-                        <Switch>
-                            {/* <Route exact path="/" component={HomeOne} /> */}
-                            <Route exact path="/" component={HomeSeven} />
-                            <Route exact path="/home-two" component={Hometwo} />
-                            <Route exact path="/home-three" component={HomeThree} />
-                            <Route exact path="/home-four" component={HomeFour} />
-                            <Route exact path="/home-five" component={HomeFive} />
-                            <Route exact path="/home-six" component={HomeSix} />
-                            <Route exact path="/home-seven" component={HomeSeven} />
-                            <Route exact path="/home-eight" component={HomeEight} />
-                            <Route exact path="/home-dark" component={HomeDark} />
-                            <Route exact path="/home-rtl" component={HomeRtl} />
-                            <Route exact path="/news" component={News} />
-                            <Route exact path="/news/single-news" component={SingleNews} />
-                            <Route exact path="/service" component={Service} />
-                            <Route exact path="/about-us" component={AboutUs} />
-                            <Route exact path="/contact" component={Contact} />
-                            <Route exact path="/error" component={Error} />
-                            <Route exact path="/about-us-another" component={AboutUsTwo} />
-                            <Route exact path="/shops" component={Shops} />
-                            <Route exact path="/shops/shop-details" component={ShopDetails} />
-                            <Route exact path='/robot1' component={Robot1}/>
-                            <Route component={Error} />
-                        </Switch>
+                        <Routes>
+                            <Route exact path="/" element={<HomeSeven />} />
+                            <Route exact path="/home-two" element={<Hometwo />} />
+                            <Route exact path="/home-three" element={<HomeThree />} />
+                            <Route exact path="/home-four" element={<HomeFour />} />
+                            <Route exact path="/home-five" element={<HomeFive />} />
+                            <Route exact path="/home-six" element={<HomeSix />} />
+                            <Route exact path="/home-seven" element={<HomeSeven />} />
+                            <Route exact path="/home-eight" element={<HomeEight />} />
+                            <Route exact path="/home-dark" element={<HomeDark />} />
+                            <Route exact path="/home-rtl" element={<HomeRtl />} />
+                            <Route exact path="/news" element={<News />} />
+                            <Route exact path="/news/single-news" element={<SingleNews />} />
+                            <Route exact path="/service" element={<Service />} />
+                            <Route exact path="/about-us" element={<AboutUs />} />
+                            <Route exact path="/contact" element={<Contact />} />
+                            <Route exact path="/error" element={<Error />} />
+                            <Route exact path="/about-us-another" element={<AboutUsTwo />} />
+                            <Route exact path="/shops" element={<Shops />} />
+                            <Route exact path="/shops/shop-details" element={<ShopDetails />} />
+                            <Route exact path="/robot1" element={<Robot1 />} />
+                            <Route path="*" element={<Error />} />
+                        </Routes>
                     </ScrollToTop>
                 </Router>
             </div>
@@ -75,4 +73,4 @@ function Routes() {
     );
 }
 
-export default Routes;
+export default AppRoutes;
